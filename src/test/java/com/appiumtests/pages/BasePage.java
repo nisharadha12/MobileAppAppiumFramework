@@ -1,7 +1,6 @@
 package com.appiumtests.pages;
 
 import com.appiumframework.driver.DriverManager;
-import com.appiumframework.report.ExtentLogger;
 import com.appiumframework.report.ReportManager;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -34,7 +33,7 @@ public class BasePage {
         explicitWait(element);
         element.click();
         ReportManager.getExtentText().info("user clicked on "+elementname+"Option");
-        ReportManager.getExtentText().pass(elementname+""+" Screen is validated successfully");
+        ReportManager.getExtentText().pass(elementname+" Screen is validated successfully");
          }
 
     protected void click(By by, String element){
